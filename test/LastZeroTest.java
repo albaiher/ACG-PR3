@@ -10,11 +10,7 @@ import java.util.*;
 public class LastZeroTest
 {
    // this test fails!
-   @Test public void multipleZeroes() 
-   {
-      int arr[] = {0, 1, 0};
-      assertEquals("Multiple zeroes: should find last one", 2, LastZero.lastZero(arr));
-   }
+
 
    // this test fails!
    @Test public void noZeroes() 
@@ -28,5 +24,11 @@ public class LastZeroTest
    {
       int arr[] = {0, 1, 2};
       assertEquals("Multiple zeroes: should find last one", 0, LastZero.lastZero(arr));
+   }
+
+   @Test public void multipleZeroes() 
+   {
+      int arr[] = {0, 1, 0};
+      assertEquals("Multiple zeroes: should find last one", 2, LastZero.lastZero(arr));
    }
 }

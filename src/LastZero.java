@@ -16,14 +16,15 @@ public class LastZero
    */
    public static int lastZero (int[] x)
    {
+      int lastPosition = -1;
       for (int i = 0; i < x.length; i++)
       {
          if (x[i] == 0)
          {
-            return i;
+            lastPosition = i;
          }
       }
-      return -1;
+      return lastPosition;
    }
    
    public static void main (String []argv)

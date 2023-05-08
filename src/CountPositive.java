@@ -19,7 +19,7 @@ public class CountPositive
    
       for (int i=0; i < x.length; i++)
       {
-         if (x[i] >= 0)
+         if (x[i] > 0)
          {
             count++;
          }
